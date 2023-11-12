@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simple (Operaciones básicas)</title>
+    <style>
+        h1{
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            justify-content: center;
+            text-align: center;
+        }
+        .operaciones{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border: 1px solid black;
+            padding: 1%;
+            padding-right: 5%;
+        }
+        .botonInicio{
+            font-size: x-large;
+            background-color: black;
+            color: white;
+            position: fixed;
+            left: 10px;
+            top: 10px;
+        }
+        .botonTema{
+            font-size: xx-large;
+            background-color: black;
+            color: white;
+            position: fixed;
+            right: 10px;
+            top: 10px;
+        }
+
+        input{
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black; 
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Calculadora Simple<br>(Operaciones básicas)</h1>
+    <div class="inicio">
+        <a href="/index.html"><button type="button" class="botonInicio" id="botonInicio">BACK</button></a>
+    </div>
+    <div class="tema">
+        <button type="button" class="botonTema" id="botonTema">☼</button>
+    </div>
+
+    <div class="operaciones" id="operaciones">
+        <div class="divSuma">
+            Suma: <input type="text" id="suma1"> mas <input type="text" id="suma2"> <button type="submit" id="botonSuma">=</button> <label id="sumatorio"></label>
+        </div>
+        <br>
+        <div class="divResta">
+            Resta: <input type="text" id="resta1"> menos <input type="text" id="resta2"> <button type="submit" id="botonResta">=</button> <label id="restatorio"></label>
+        </div>
+        <br>
+        <div class="divProducto">
+            Multiplica: <input type="text" id="producto1"> por <input type="text" id="producto2"> <button type="submit" id="botonProducto">=</button> <label id="productorio"></label>
+        </div>
+        <br>
+        <div class="divCociente">
+            Divide: <input type="text" id="division1"> entre <input type="text" id="division2"> <button type="submit" id="botonDivision">=</button> <label id="divisorio"></label>
+        </div>
+        <div class="divLimpiar">
+            <button style="margin-top: 15px;" id="limpiarTodo">LIMPIAR TODO</button>
+        </div>
+    </div>
+
+    <script src="calculadora_basica.js"></script>
+</body>
+</html>
