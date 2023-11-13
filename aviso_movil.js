@@ -4,6 +4,6 @@ window.onload = function() {
 
         setTimeout(function() {
           window.close();
-        }, 10);
+        }, 1000);
       }
     };
